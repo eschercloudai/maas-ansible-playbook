@@ -106,7 +106,7 @@
     name: common
     tasks_from: TLS
   # TLS is available only in MAAS 3.2 or higher
-  when: maas_version is version("3.2", '>=') and enable_tls
+  when: maas_version is version("3.2", ">=") and enable_tls
 
 - name: Wait For MAAS To Create Secret File
   ansible.builtin.wait_for:
